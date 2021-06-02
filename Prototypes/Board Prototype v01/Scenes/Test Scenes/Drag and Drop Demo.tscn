@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Scenes/Test Icon.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Scenes/Test Rest Zone.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scenes/Test Rest Zone Dark.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Test Scenes/Test Icon.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Test Scenes/Test Rest Zone.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Test Scenes/Test Rest Zone Dark.tscn" type="PackedScene" id=3]
 
 [node name="Node2D" type="Node2D"]
 

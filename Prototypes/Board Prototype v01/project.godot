@@ -11,8 +11,14 @@ config_version=4
 [application]
 
 config/name="Board Prototype v01"
-run/main_scene="res://Scenes/Drag and Drop Demo.tscn"
+run/main_scene="res://Scenes/Board Prototype.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1920
+window/size/height=1080
+window/size/fullscreen=true
 
 [input]
 
