@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node",
+"class": "BoardCell",
+"language": "GDScript",
+"path": "res://Source/Custom Classes/Board Cell.gd"
+} ]
+_global_script_class_icons={
+"BoardCell": ""
+}
+
 [application]
 
 config/name="Board Prototype v01"
