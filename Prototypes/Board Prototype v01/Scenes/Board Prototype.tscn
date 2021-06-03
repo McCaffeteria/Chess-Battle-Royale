@@ -19,330 +19,333 @@
 [node name="Board Prototype Root" type="Node2D"]
 script = ExtResource( 15 )
 
-[node name="Board" type="Sprite" parent="."]
+[node name="Board Texture" type="Sprite" parent="."]
 position = Vector2( 960, 540 )
 scale = Vector2( 0.8, 0.8 )
 texture = ExtResource( 1 )
 
-[node name="Cell A1" parent="Board" groups=[
+[node name="Board Cells" type="Node2D" parent="."]
+position = Vector2( 480, 60 )
+
+[node name="Cell A1" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( -525, 525 )
+position = Vector2( 60, 900 )
 
-[node name="Cell B1" parent="Board" groups=[
+[node name="Cell B1" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( -375, 525 )
+position = Vector2( 180, 900 )
 
-[node name="Cell C1" parent="Board" groups=[
+[node name="Cell C1" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( -225, 525 )
+position = Vector2( 300, 900 )
 
-[node name="Cell D1" parent="Board" groups=[
+[node name="Cell D1" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( -75.0001, 525 )
+position = Vector2( 420, 900 )
 
-[node name="Cell E1" parent="Board" groups=[
+[node name="Cell E1" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( 74.9999, 525 )
+position = Vector2( 540, 900 )
 
-[node name="Cell F1" parent="Board" groups=[
+[node name="Cell F1" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( 225, 525 )
+position = Vector2( 660, 900 )
 
-[node name="Cell G1" parent="Board" groups=[
+[node name="Cell G1" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( 375, 525 )
+position = Vector2( 780, 900 )
 
-[node name="Cell H1" parent="Board" groups=[
+[node name="Cell H1" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( 525, 525 )
+position = Vector2( 900, 900 )
 
-[node name="Cell A2" parent="Board" groups=[
+[node name="Cell A2" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( -525, 375 )
+position = Vector2( 60, 780 )
 
-[node name="Cell B2" parent="Board" groups=[
+[node name="Cell B2" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( -375, 375 )
+position = Vector2( 180, 780 )
 
-[node name="Cell C2" parent="Board" groups=[
+[node name="Cell C2" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( -225, 375 )
+position = Vector2( 300, 780 )
 
-[node name="Cell D2" parent="Board" groups=[
+[node name="Cell D2" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( -75, 375 )
+position = Vector2( 420, 780 )
 
-[node name="Cell E2" parent="Board" groups=[
+[node name="Cell E2" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( 74.9999, 375 )
+position = Vector2( 540, 780 )
 
-[node name="Cell F2" parent="Board" groups=[
+[node name="Cell F2" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( 225, 375 )
+position = Vector2( 660, 780 )
 
-[node name="Cell G2" parent="Board" groups=[
+[node name="Cell G2" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( 375, 375 )
+position = Vector2( 780, 780 )
 
-[node name="Cell H2" parent="Board" groups=[
+[node name="Cell H2" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( 525, 375 )
+position = Vector2( 900, 780 )
 
-[node name="Cell A3" parent="Board" groups=[
+[node name="Cell A3" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( -525, 225 )
+position = Vector2( 60, 660 )
 
-[node name="Cell B3" parent="Board" groups=[
+[node name="Cell B3" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( -375, 225 )
+position = Vector2( 180, 660 )
 
-[node name="Cell C3" parent="Board" groups=[
+[node name="Cell C3" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( -225, 225 )
+position = Vector2( 300, 660 )
 
-[node name="Cell D3" parent="Board" groups=[
+[node name="Cell D3" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( -75, 225 )
+position = Vector2( 420, 660 )
 
-[node name="Cell E3" parent="Board" groups=[
+[node name="Cell E3" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( 75.0001, 225 )
+position = Vector2( 540, 660 )
 
-[node name="Cell F3" parent="Board" groups=[
+[node name="Cell F3" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( 225, 225 )
+position = Vector2( 660, 660 )
 
-[node name="Cell G3" parent="Board" groups=[
+[node name="Cell G3" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( 375, 225 )
+position = Vector2( 780, 660 )
 
-[node name="Cell H3" parent="Board" groups=[
+[node name="Cell H3" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( 525, 225 )
+position = Vector2( 900, 660 )
 
-[node name="Cell A4" parent="Board" groups=[
+[node name="Cell A4" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( -525, 74.9999 )
+position = Vector2( 60, 540 )
 
-[node name="Cell B4" parent="Board" groups=[
+[node name="Cell B4" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( -375, 74.9999 )
+position = Vector2( 180, 540 )
 
-[node name="Cell C4" parent="Board" groups=[
+[node name="Cell C4" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( -225, 75 )
+position = Vector2( 300, 540 )
 
-[node name="Cell D4" parent="Board" groups=[
+[node name="Cell D4" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( -75.0001, 74.9999 )
+position = Vector2( 420, 540 )
 
-[node name="Cell E4" parent="Board" groups=[
+[node name="Cell E4" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( 75.0001, 75 )
+position = Vector2( 540, 540 )
 
-[node name="Cell F4" parent="Board" groups=[
+[node name="Cell F4" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( 225, 74.9999 )
+position = Vector2( 660, 540 )
 
-[node name="Cell G4" parent="Board" groups=[
+[node name="Cell G4" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( 375, 74.9999 )
+position = Vector2( 780, 540 )
 
-[node name="Cell H4" parent="Board" groups=[
+[node name="Cell H4" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( 525, 74.9999 )
+position = Vector2( 900, 540 )
 
-[node name="Cell A5" parent="Board" groups=[
+[node name="Cell A5" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( -525, -75.0001 )
+position = Vector2( 60, 420 )
 
-[node name="Cell B5" parent="Board" groups=[
+[node name="Cell B5" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( -375, -75.0001 )
+position = Vector2( 180, 420 )
 
-[node name="Cell C5" parent="Board" groups=[
+[node name="Cell C5" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( -225, -75 )
+position = Vector2( 300, 420 )
 
-[node name="Cell D5" parent="Board" groups=[
+[node name="Cell D5" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( -75, -75 )
+position = Vector2( 420, 420 )
 
-[node name="Cell E5" parent="Board" groups=[
+[node name="Cell E5" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( 75.0001, -75 )
+position = Vector2( 540, 420 )
 
-[node name="Cell F5" parent="Board" groups=[
+[node name="Cell F5" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( 225, -75.0001 )
+position = Vector2( 660, 420 )
 
-[node name="Cell G5" parent="Board" groups=[
+[node name="Cell G5" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( 375, -75.0001 )
+position = Vector2( 780, 420 )
 
-[node name="Cell H5" parent="Board" groups=[
+[node name="Cell H5" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( 525, -75.0001 )
+position = Vector2( 900, 420 )
 
-[node name="Cell A6" parent="Board" groups=[
+[node name="Cell A6" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( -525, -225 )
+position = Vector2( 60, 300 )
 
-[node name="Cell B6" parent="Board" groups=[
+[node name="Cell B6" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( -375, -225 )
+position = Vector2( 180, 300 )
 
-[node name="Cell C6" parent="Board" groups=[
+[node name="Cell C6" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( -225, -225 )
+position = Vector2( 300, 300 )
 
-[node name="Cell D6" parent="Board" groups=[
+[node name="Cell D6" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( -75.0001, -225 )
+position = Vector2( 420, 300 )
 
-[node name="Cell E6" parent="Board" groups=[
+[node name="Cell E6" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( 74.9999, -225 )
+position = Vector2( 540, 300 )
 
-[node name="Cell F6" parent="Board" groups=[
+[node name="Cell F6" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( 225, -225 )
+position = Vector2( 660, 300 )
 
-[node name="Cell G6" parent="Board" groups=[
+[node name="Cell G6" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( 375, -225 )
+position = Vector2( 780, 300 )
 
-[node name="Cell H6" parent="Board" groups=[
+[node name="Cell H6" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( 525, -225 )
+position = Vector2( 900, 300 )
 
-[node name="Cell A7" parent="Board" groups=[
+[node name="Cell A7" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( -525, -375 )
+position = Vector2( 60, 180 )
 
-[node name="Cell B7" parent="Board" groups=[
+[node name="Cell B7" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( -375, -375 )
+position = Vector2( 180, 180 )
 
-[node name="Cell C7" parent="Board" groups=[
+[node name="Cell C7" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( -225, -375 )
+position = Vector2( 300, 180 )
 
-[node name="Cell D7" parent="Board" groups=[
+[node name="Cell D7" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( -75.0001, -375 )
+position = Vector2( 420, 180 )
 
-[node name="Cell E7" parent="Board" groups=[
+[node name="Cell E7" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( 74.9999, -375 )
+position = Vector2( 540, 180 )
 
-[node name="Cell F7" parent="Board" groups=[
+[node name="Cell F7" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( 225, -375 )
+position = Vector2( 660, 180 )
 
-[node name="Cell G7" parent="Board" groups=[
+[node name="Cell G7" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( 375, -375 )
+position = Vector2( 780, 180 )
 
-[node name="Cell H7" parent="Board" groups=[
+[node name="Cell H7" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( 525, -375 )
+position = Vector2( 900, 180 )
 
-[node name="Cell A8" parent="Board" groups=[
+[node name="Cell A8" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( -525, -525 )
+position = Vector2( 60, 60 )
 
-[node name="Cell B8" parent="Board" groups=[
+[node name="Cell B8" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( -375, -525 )
+position = Vector2( 180, 60 )
 
-[node name="Cell C8" parent="Board" groups=[
+[node name="Cell C8" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( -225, -525 )
+position = Vector2( 300, 60 )
 
-[node name="Cell D8" parent="Board" groups=[
+[node name="Cell D8" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( -75, -525 )
+position = Vector2( 420, 60 )
 
-[node name="Cell E8" parent="Board" groups=[
+[node name="Cell E8" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( 75, -525 )
+position = Vector2( 540, 60 )
 
-[node name="Cell F8" parent="Board" groups=[
+[node name="Cell F8" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( 225, -525 )
+position = Vector2( 660, 60 )
 
-[node name="Cell G8" parent="Board" groups=[
+[node name="Cell G8" parent="Board Cells" groups=[
 "Light",
 ] instance=ExtResource( 2 )]
-position = Vector2( 375, -525 )
+position = Vector2( 780, 60 )
 
-[node name="Cell H8" parent="Board" groups=[
+[node name="Cell H8" parent="Board Cells" groups=[
 "Dark",
 ] instance=ExtResource( 2 )]
-position = Vector2( 525, -525 )
+position = Vector2( 900, 60 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 960, 540 )

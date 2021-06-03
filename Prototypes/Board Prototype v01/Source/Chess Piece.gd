@@ -3,6 +3,7 @@ extends Node2D
 var selected = false
 var rest_point
 var rest_nodes = []
+var coordinate : Vector2
 
 func _ready():
 	rest_nodes = get_tree().get_nodes_in_group("zone")

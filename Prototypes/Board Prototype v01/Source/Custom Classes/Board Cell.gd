@@ -2,7 +2,7 @@ extends Node
 
 class_name BoardCell
 
-var contains = nill
+var contains
 
 func _init(contents):
 	contains = contents
