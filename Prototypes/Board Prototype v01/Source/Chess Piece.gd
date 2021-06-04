@@ -19,17 +19,23 @@ func _on_Area2D_input_event(viewport, event, shape_idx):
 		
 func _physics_process(delta):
 	if selected:
-		global_position = lerp(global_position, get_global_mouse_position(), 25 * delta)
-		scale = lerp(scale, Vector2(1.2, 1.2), 10 * delta)
+		lerpToPosition(get_global_mouse_position(), 25 * delta)
+		lerpToScale(1.2, 10 * delta)
 	else:
-		global_position = lerp(global_position, rest_point, 10 * delta)
-		scale = lerp(scale, Vector2(1, 1), 10 * delta)
+		lerpToPosition(rest_point, 10 * delta)
+		lerpToScale(1, 10 * delta)
 
 func _input(event):
 	if event is InputEventMouseButton:
 		if event.button_index == BUTTON_LEFT and not event.pressed:
 			selected = false
 			setRestPoint()
+
+func lerpToPosition(lerpTarget, lerpSpeed):
+	global_position = lerp(global_position, lerpTarget, lerpSpeed)
+
+func lerpToScale(lerpTarget, lerpSpeed):
+	scale = lerp(scale, Vector2(lerpTarget, lerpTarget), lerpSpeed)
 
 func setRestPoint():
 	var shortest_dist = 75
@@ -40,7 +46,6 @@ func setRestPoint():
 			shortest_dist = distance
 
 func showValidMoves():
-	
 	pass
 
 func defineValidMoves():
