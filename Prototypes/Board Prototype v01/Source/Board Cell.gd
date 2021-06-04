@@ -12,5 +12,8 @@ func _draw():
 func highlight():
 	modulate = Color.red
 
-func deselect():
+func unhighlight():
 	modulate = Color.white
+
+func broadcastClick():
+	pass

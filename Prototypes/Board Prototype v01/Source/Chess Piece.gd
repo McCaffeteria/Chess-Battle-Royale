@@ -37,6 +37,13 @@ func lerpToPosition(lerpTarget, lerpSpeed):
 func lerpToScale(lerpTarget, lerpSpeed):
 	scale = lerp(scale, Vector2(lerpTarget, lerpTarget), lerpSpeed)
 
+func broadcastSelected():
+	pass
+
+func checkRestPoint():
+	#If within distance of rest valid rest point, else return to old point
+	pass
+
 func setRestPoint():
 	var shortest_dist = 75
 	for child in rest_nodes:
@@ -44,9 +51,3 @@ func setRestPoint():
 		if distance < shortest_dist:
 			rest_point = child.global_position
 			shortest_dist = distance
-
-func showValidMoves():
-	pass
-
-func defineValidMoves():
-	pass
