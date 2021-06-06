@@ -23,6 +23,13 @@ func validateMove():
 	#invalid moves
 	pass
 
+func arePlayersReady():
+	#Check whether or not all players have submitted moves.
+	#Consider adding a secondary method to ask sub-arbiters
+	#whether they have moves, but high level networking
+	#should ensure this is redundant.
+	pass
+
 func updateSubs():
 	#This is for updating a single round of moves to the sub-arbiters
 	pass
@@ -33,7 +40,7 @@ func calculateResults():
 	#a true MMO situation, but single arbiter will be fine for now.
 	pass
 
-#Ths section should be identical to the section in Sub-Arbiter.gd
+#Ths following sections should be identical to the section in Sub-Arbiter.gd
 func pawnMoves():
 	pass
 
